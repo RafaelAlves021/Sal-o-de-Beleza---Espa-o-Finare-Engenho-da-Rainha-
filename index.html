@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Espaço Finare | Salão de Beleza & Terapia Capilar - Engenho da Rainha, RJ</title>
+  <meta name="description" content="Especialistas em cabelos cacheados, crespos e terapia capilar no Shopping Point 7, Engenho da Rainha - RJ. Atendimento exclusivo com horário marcado.">
+
+  <!-- Fontes do Google: Fraunces (títulos elegantes e orgânicos) e Karla (sans-serif moderna) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Karla:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            creme: {
+              50: '#fdfcf9',
+              100: '#faf7f2',
+              200: '#f4ede2',
+              300: '#eadecf'
+            },
+            salvia: {
+              50: '#f3f6f3',
+              100: '#e3ece3',
+              200: '#cadac9',
+              300: '#a3b899',
+              400: '#7d967d',
+              500: '#647d65',
+              600: '#4e6250',
+              700: '#3a4a3c',
+              800: '#2a362b',
+              900: '#1b241c'
+            },
+            grafite: '#1e2521',
+            charcoal: '#2d3731'
+          },
+          fontFamily: {
+            display: ['"Fraunces"', 'serif'],
+            body: ['"Karla"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Gradiente vibrante do anel do Instagram da Finare */
+    .ig-ring-gradient {
+      background: linear-gradient(45deg, #d62976 0%, #fa7e1e 50%, #feda75 100%);
+    }
+
+    .ig-ring-hover:hover {
+      box-shadow: 0 0 15px rgba(250, 126, 30, 0.4);
+    }
+
+    /* Scrollbar oculta para o visual elegante dos stories/destaques */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    /* Animação suave para troca de abas de destaques */
+    .tab-fade-enter {
+      animation: tabFadeIn 0.35s ease-out forwards;
+    }
+
+    @keyframes tabFadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-creme-100 text-grafite font-body antialiased selection:bg-salvia-300 selection:text-salvia-900">
+
+  <!-- Top Banner de Aviso de Atendimento -->
+  <aside aria-label="Aviso de Agendamento" class="bg-salvia-800 text-creme-100 text-xs py-2 px-4 text-center tracking-wide font-medium flex items-center justify-center gap-2">
+    <span class="inline-block w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+    <span>Atenção: Atendimento exclusivo mediante <strong>horário marcado</strong></span>
+  </aside>
+
+  <!-- Header Principal com Navegação Fixa -->
+  <header class="sticky top-0 z-40 bg-creme-100/90 backdrop-blur-md border-b border-salvia-200 transition-all duration-300" id="mainHeader">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logotipo Circular com Anel Gradiente -->
+      <a href="#hero" class="flex items-center gap-3 group" aria-label="Espaço Finare Início">
+        <div class="w-12 h-12 p-[2px] rounded-full ig-ring-gradient group-hover:scale-105 transition-transform duration-300 shadow-sm">
+          <div class="w-full h-full rounded-full bg-salvia-400 flex items-center justify-center border-2 border-creme-100 text-creme-50 font-display font-bold text-lg tracking-wider">
+            F
+          </div>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-display font-semibold text-lg text-salvia-900 tracking-tight leading-none group-hover:text-salvia-500 transition-colors">
+            Espaço Finare
+          </span>
+          <span class="text-[11px] text-salvia-600 font-medium tracking-wide uppercase mt-0.5">
+            Cachos & Terapia Capilar
+          </span>
+        </div>
+      </a>
+
+      <!-- Links de Navegação Desktop -->
+      <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-charcoal">
+        <a href="#servicos" class="hover:text-salvia-600 transition-colors">Especialidades</a>
+        <a href="#sobre" class="hover:text-salvia-600 transition-colors">O Espaço</a>
+        <a href="#galeria" class="hover:text-salvia-600 transition-colors">Galeria</a>
+        <a href="#avaliacoes" class="hover:text-salvia-600 transition-colors">Avaliações</a>
+        <a href="#localizacao" class="hover:text-salvia-600 transition-colors">Localização</a>
+      </nav>
+
+      <!-- CTA de Agendamento Desktop -->
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="https://wa.me/5521980773374?text=Ol%C3%A1%2C%20gostaria%20de%20consultar%20hor%C3%A1rios%20dispon%C3%ADveis%20no%20Espa%C3%A7o%20Finare." 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider text-creme-50 bg-salvia-500 hover:bg-salvia-600 active:scale-95 transition-all shadow-sm">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.35.491 1.199.534 1.286.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.861.174.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.144.39-.086s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z"/>
+          </svg>
+          Agendar Horário
+        </a>
+      </div>
+
+      <!-- Botão Hambúrguer Mobile -->
+      <button id="mobileMenuBtn" aria-label="Abrir menu" class="md:hidden p-2 rounded-lg text-salvia-700 hover:bg-salvia-100 transition-colors">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path id="menuIcon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+
+    </div>
+
+    <!-- Menu Dropdown Mobile -->
+    <div id="mobileMenu" class="hidden md:hidden bg-creme-50 border-b border-salvia-200 px-6 py-5 flex-col gap-4 text-sm font-medium">
+      <a href="#servicos" class="mobile-link text-charcoal hover:text-salvia-600 py-1">Especialidades</a>
+      <a href="#sobre" class="mobile-link text-charcoal hover:text-salvia-600 py-1">O Espaço</a>
+      <a href="#galeria" class="mobile-link text-charcoal hover:text-salvia-600 py-1">Galeria</a>
+      <a href="#avaliacoes" class="mobile-link text-charcoal hover:text-salvia-600 py-1">Avaliações</a>
+      <a href="#localizacao" class="mobile-link text-charcoal hover:text-salvia-600 py-1">Localização</a>
+      <div class="pt-2 border-t border-salvia-200">
+        <a href="https://wa.me/5521980773374" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 py-3 rounded-full text-xs font-semibold uppercase tracking-wider text-creme-50 bg-salvia-500 shadow-sm">
+          Falar com Renata Vatimo
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section id="hero" class="relative pt-12 pb-16 md:pt-20 md:pb-24 overflow-hidden">
+    <!-- Círculos decorativos de fundo sutis -->
+    <div class="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-salvia-200/40 blur-3xl pointer-events-none"></div>
+    <div class="absolute top-1/2 -right-24 w-96 h-96 rounded-full bg-amber-100/60 blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+      
+      <!-- Badge Central com Anel Gradiente Replicando o Instagram da Finare -->
+      <div class="inline-flex flex-col items-center mb-6">
+        <div class="relative p-[3px] rounded-full ig-ring-gradient shadow-lg">
+          <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-salvia-400 border-4 border-creme-100 flex flex-col items-center justify-center text-creme-50 shadow-inner">
+            <span class="font-display font-bold text-2xl sm:text-3xl tracking-wide">Finare</span>
+            <span class="text-[9px] tracking-widest uppercase font-semibold text-creme-200">Espaço</span>
+          </div>
+        </div>
+        <div class="mt-3 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-salvia-100 border border-salvia-300 text-salvia-800 text-xs font-semibold">
+          <span>Engenho da Rainha • Shopping Point 7</span>
+        </div>
+      </div>
+
+      <!-- Frase de Efeito Oficial com Linha de Gradiente -->
+      <h1 class="font-display font-medium text-3xl sm:text-5xl md:text-6xl text-salvia-900 tracking-tight leading-tight max-w-3xl mx-auto mb-6">
+        "O cabelo ideal é aquele que te faz <span class="relative whitespace-nowrap">
+          <span class="relative z-10 italic">sentir bem!</span>
+          <span class="absolute bottom-1 left-0 w-full h-2 ig-ring-gradient opacity-80 -rotate-1 rounded-full"></span>
+        </span>"
+      </h1>
+
+      <p class="text-charcoal/80 text-base sm:text-lg max-w-2xl mx-auto font-light leading-relaxed mb-8">
+        Salão de beleza acolhedor e especializado no cuidado autêntico de <strong>cabelos cacheados e crespos</strong>, além de tratamentos avançados em <strong>Terapia Capilar</strong> com Renata Vatimo.
+      </p>
+
+      <!-- Botões de Ação Hero -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="https://wa.me/5521980773374?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20no%20Espa%C3%A7o%20Finare!" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full text-sm font-semibold tracking-wider uppercase text-creme-50 bg-salvia-600 hover:bg-salvia-700 active:scale-95 transition-all shadow-md">
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.35.491 1.199.534 1.286.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.861.174.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.144.39-.086s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z"/>
+          </svg>
+          Agendar Meu Horário
+        </a>
+
+        <a href="#servicos" class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-4 rounded-full text-sm font-medium text-salvia-800 bg-salvia-100 hover:bg-salvia-200 transition-colors">
+          Explorar Nossos Cuidados
+        </a>
+      </div>
+
+      <!-- Aviso em Destaque -->
+      <div class="mt-6 flex items-center justify-center gap-2 text-xs text-charcoal/70">
+        <span class="inline-block p-1 bg-amber-100 text-amber-800 rounded-full font-bold">✓</span>
+        <span>Agenda organizada: Atendemos <strong>somente com horário prévio</strong> para sua comodidade.</span>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="servicos" class="py-12 bg-creme-200/50 border-y border-salvia-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Cabeçalho da Seção -->
+      <div class="text-center max-w-xl mx-auto mb-8">
+        <span class="text-xs font-semibold tracking-wider uppercase text-salvia-600 block mb-1">
+          Navegue como nos Stories
+        </span>
+        <h2 class="font-display text-2xl sm:text-3xl text-salvia-900 font-semibold">
+          Especialidades do Espaço Finare
+        </h2>
+        <p class="text-sm text-charcoal/70 mt-2">
+          Toque em uma categoria abaixo para conferir os detalhes de cada atendimento.
+        </p>
+      </div>
+
+      <!-- Carrossel / Fileira Horizontal Scrollável de Círculos de Destaque -->
+      <div class="flex items-center gap-4 sm:gap-6 overflow-x-auto no-scrollbar py-4 px-2 -mx-2 justify-start md:justify-center" id="highlightsTrack">
+        <!-- Injetado ou gerenciado via atributos data-category -->
+      </div>
+
+      <!-- Painel Dinâmico de Exibição do Serviço Selecionado -->
+      <div class="mt-8 max-w-3xl mx-auto bg-creme-50 rounded-3xl p-6 sm:p-8 border border-salvia-200 shadow-sm relative overflow-hidden" id="serviceDetailsCard">
+        <!-- Conteúdo dinâmico será injetado pelo JavaScript com efeito fade -->
+      </div>
+
+    </div>
+  </section>
+
+  <section id="sobre" class="py-16 md:py-24">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Bloco de Imagem com Moldura Decorativa Circular e Anel -->
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="relative w-72 h-72 sm:w-80 sm:h-80">
+            <!-- Anel decorativo de fundo -->
+            <div class="absolute inset-0 rounded-full ig-ring-gradient opacity-85 rotate-6 scale-105"></div>
+            
+            <div class="relative w-full h-full rounded-full overflow-hidden border-4 border-creme-100 bg-salvia-200 shadow-md">
+              <img 
+                src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80" 
+                alt="Ambiente de cuidados e salão no Espaço Finare" 
+                class="w-full h-full object-cover"
+                loading="lazy"
+                onerror="this.src='https://placehold.co/600x600/7d967d/faf7f2?text=Espaco+Finare'"
+              />
+            </div>
+
+            <!-- Selo Flutuante de Especialistas -->
+            <div class="absolute -bottom-3 -right-2 bg-creme-50 border border-salvia-300 rounded-2xl p-3 shadow-lg flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-salvia-400 text-creme-50 flex items-center justify-center font-bold text-lg">
+                ✦
+              </div>
+              <div class="text-left">
+                <p class="text-[10px] uppercase font-bold text-salvia-600 tracking-wider">Referência</p>
+                <p class="text-xs font-bold text-salvia-900 leading-tight">Especialistas em<br>Cachos & Crespos</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Conteúdo Textual Sobre -->
+        <div class="lg:col-span-7">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-salvia-100 border border-salvia-200 text-salvia-800 text-xs font-semibold mb-4">
+            <span>Sobre o Espaço Finare</span>
+          </div>
+
+          <h2 class="font-display text-3xl sm:text-4xl text-salvia-900 font-semibold mb-6 leading-snug">
+            Cuidamos de todos os cabelos, com paixão declarada por cachos e crespos.
+          </h2>
+
+          <div class="space-y-4 text-charcoal/80 text-base leading-relaxed">
+            <p>
+              Localizado estrategicamente no <strong>Shopping Point 7</strong>, no Engenho da Rainha, o <strong>Espaço Finare</strong> nasceu para celebrar a beleza real e individual de cada cliente.
+            </p>
+            <p>
+              Sob a liderança de <strong>Renata Vatimo (<a href="https://www.instagram.com/renata_vatimo_/" target="_blank" rel="noopener noreferrer" class="text-salvia-600 font-semibold underline underline-offset-4 decoration-amber-400 hover:text-salvia-700">@renata_vatimo_</a>)</strong>, oferecemos uma estrutura completa de salão, aliando técnicas personalizadas de corte e finalização para curvaturas à ciência da <strong>Terapia Capilar</strong>.
+            </p>
+            <p class="italic text-salvia-800 bg-salvia-100/60 p-4 rounded-2xl border-l-4 border-salvia-400">
+              "Além de todos os serviços que um salão de beleza oferece, também contamos com Terapia Capilar para tratar a saúde do couro cabeludo desde a raiz. Venha conhecer o nosso espaço!"
+            </p>
+          </div>
+
+          <!-- Pilares Rápidos -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 mt-8 pt-6 border-t border-salvia-200">
+            <div>
+              <span class="block font-display text-2xl font-bold text-salvia-600">100%</span>
+              <span class="text-xs text-charcoal/70">Atendimento personalizado e humanizado</span>
+            </div>
+            <div>
+              <span class="block font-display text-2xl font-bold text-salvia-600">Shopping</span>
+              <span class="text-xs text-charcoal/70">Conforto, segurança e fácil acesso no Point 7</span>
+            </div>
+            <div class="col-span-2 sm:col-span-1">
+              <span class="block font-display text-2xl font-bold text-salvia-600">Saúde</span>
+              <span class="text-xs text-charcoal/70">Terapia capilar com avaliação profunda</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="galeria" class="py-16 bg-creme-200/40">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-10">
+        <div>
+          <span class="text-xs font-semibold tracking-wider uppercase text-salvia-600 block mb-1">
+            Galeria & Transformações
+          </span>
+          <h2 class="font-display text-3xl text-salvia-900 font-semibold">
+            Momentos no Espaço Finare
+          </h2>
+        </div>
+        <a href="https://www.instagram.com/espacofinare" target="_blank" rel="noopener noreferrer" class="mt-4 sm:mt-0 inline-flex items-center gap-2 text-xs font-bold text-salvia-700 hover:text-salvia-900 group">
+          <span>Ver mais no Instagram @espacofinare</span>
+          <span class="transition-transform group-hover:translate-x-1">→</span>
+        </a>
+      </div>
+
+      <!-- Grid com Molduras Estilo Stories -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+        
+        <!-- Card 1 (Destaque com anel gradiente suave) -->
+        <div class="group relative rounded-3xl p-[2px] ig-ring-gradient shadow-sm hover:shadow-md transition-all duration-300">
+          <div class="w-full h-64 sm:h-72 rounded-[22px] overflow-hidden bg-salvia-200 relative">
+            <img 
+              src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=600&q=80" 
+              alt="Cabelo cacheado definido e iluminado" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+              onerror="this.src='https://placehold.co/400x500/7d967d/faf7f2?text=Cachos+Finare'"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-salvia-900/80 via-transparent to-transparent flex items-end p-4">
+              <span class="text-xs font-semibold text-creme-100">Corte & Definição de Cachos</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="group relative rounded-3xl overflow-hidden bg-salvia-200 shadow-sm border border-salvia-200 hover:border-salvia-400 transition-all duration-300">
+          <div class="w-full h-64 sm:h-72 relative">
+            <img 
+              src="https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=600&q=80" 
+              alt="Sessão de Terapia Capilar e saúde do couro cabeludo" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+              onerror="this.src='https://placehold.co/400x500/7d967d/faf7f2?text=Terapia+Capilar'"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-salvia-900/80 via-transparent to-transparent flex items-end p-4">
+              <span class="text-xs font-semibold text-creme-100">Terapia Capilar & Bem-Estar</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 (Destaque com anel gradiente) -->
+        <div class="group relative rounded-3xl p-[2px] ig-ring-gradient shadow-sm hover:shadow-md transition-all duration-300">
+          <div class="w-full h-64 sm:h-72 rounded-[22px] overflow-hidden bg-salvia-200 relative">
+            <img 
+              src="https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?auto=format&fit=crop&w=600&q=80" 
+              alt="Penteado e Maquiagem sofisticada" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+              onerror="this.src='https://placehold.co/400x500/7d967d/faf7f2?text=Unhas+e+Make'"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-salvia-900/80 via-transparent to-transparent flex items-end p-4">
+              <span class="text-xs font-semibold text-creme-100">Nails Designer & Beleza</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="group relative rounded-3xl overflow-hidden bg-salvia-200 shadow-sm border border-salvia-200 hover:border-salvia-400 transition-all duration-300">
+          <div class="w-full h-64 sm:h-72 relative">
+            <img 
+              src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=600&q=80" 
+              alt="Crespo volumoso e empoderado" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+              onerror="this.src='https://placehold.co/400x500/7d967d/faf7f2?text=Crespos+Poderosos'"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-salvia-900/80 via-transparent to-transparent flex items-end p-4">
+              <span class="text-xs font-semibold text-creme-100">Transição e Curvaturas</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section id="avaliacoes" class="py-16 md:py-24">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs font-semibold tracking-wider uppercase text-salvia-600 block mb-1">
+          Confiança Comprovada
+        </span>
+        <h2 class="font-display text-3xl sm:text-4xl text-salvia-900 font-semibold">
+          Aprovado por Quem Ama Seu Próprio Cabelo
+        </h2>
+        <p class="text-charcoal/70 text-sm mt-2">
+          Avaliações espontâneas de clientes reais no Google e Facebook.
+        </p>
+      </div>
+
+      <!-- Placas de Notas: Google e Facebook lado a lado -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto mb-12">
+        
+        <!-- Google Reviews Badge -->
+        <div class="bg-creme-50 border border-salvia-200 rounded-3xl p-6 flex items-center gap-5 shadow-sm">
+          <div class="w-14 h-14 rounded-2xl bg-salvia-100 flex items-center justify-center text-salvia-700 font-bold text-xl flex-shrink-0">
+            G
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="text-2xl font-display font-bold text-salvia-900">5.0</span>
+              <div class="flex text-amber-500 text-sm">
+                ★★★★★
+              </div>
+            </div>
+            <p class="text-xs font-semibold text-salvia-800">Avaliação Máxima no Google</p>
+            <p class="text-[11px] text-charcoal/60">Baseado em 49 avaliações de clientes verificados</p>
+          </div>
+        </div>
+
+        <!-- Facebook Reviews Badge -->
+        <div class="bg-creme-50 border border-salvia-200 rounded-3xl p-6 flex items-center gap-5 shadow-sm">
+          <div class="w-14 h-14 rounded-2xl bg-salvia-100 flex items-center justify-center text-salvia-700 font-bold text-xl flex-shrink-0">
+            f
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="text-2xl font-display font-bold text-salvia-900">4.6</span>
+              <div class="flex text-amber-500 text-sm">
+                ★★★★★
+              </div>
+            </div>
+            <p class="text-xs font-semibold text-salvia-800">Recomendado no Facebook</p>
+            <p class="text-[11px] text-charcoal/60">Baseado em 35 avaliações da comunidade</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Cards com os 3 Depoimentos Reais -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Depoimento 1 -->
+        <div class="bg-creme-50/80 border border-salvia-200 rounded-3xl p-6 flex flex-col justify-between hover:shadow-md transition-shadow">
+          <div>
+            <div class="text-amber-500 text-xs tracking-widest mb-3">★★★★★</div>
+            <p class="text-charcoal/90 text-sm italic leading-relaxed">
+              "A proprietária é uma mulher incrível em todos os sentidos da palavra."
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-salvia-100 flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-salvia-300 text-salvia-800 font-semibold text-xs flex items-center justify-center">
+              C
+            </div>
+            <div>
+              <p class="text-xs font-bold text-salvia-900">Cliente Verificada</p>
+              <p class="text-[10px] text-charcoal/60">Google Reviews</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Depoimento 2 -->
+        <div class="bg-creme-50/80 border border-salvia-200 rounded-3xl p-6 flex flex-col justify-between hover:shadow-md transition-shadow">
+          <div>
+            <div class="text-amber-500 text-xs tracking-widest mb-3">★★★★★</div>
+            <p class="text-charcoal/90 text-sm italic leading-relaxed">
+              "Espaço incrível, profissionais maravilhosos, atenciosos e muito competentes!"
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-salvia-100 flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-salvia-300 text-salvia-800 font-semibold text-xs flex items-center justify-center">
+              A
+            </div>
+            <div>
+              <p class="text-xs font-bold text-salvia-900">Cliente Frequente</p>
+              <p class="text-[10px] text-charcoal/60">Google Reviews</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Depoimento 3 -->
+        <div class="bg-creme-50/80 border border-salvia-200 rounded-3xl p-6 flex flex-col justify-between hover:shadow-md transition-shadow">
+          <div>
+            <div class="text-amber-500 text-xs tracking-widest mb-3">★★★★★</div>
+            <p class="text-charcoal/90 text-sm italic leading-relaxed">
+              "Ambiente limpo e aconchegante, bem localizado, fácil acesso, preço justo."
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-salvia-100 flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-salvia-300 text-salvia-800 font-semibold text-xs flex items-center justify-center">
+              M
+            </div>
+            <div>
+              <p class="text-xs font-bold text-salvia-900">Frequentadora do Point 7</p>
+              <p class="text-[10px] text-charcoal/60">Facebook Reviews</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section id="localizacao" class="py-16 bg-salvia-100/40 border-t border-salvia-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        <!-- Detalhes de Endereço e Acesso -->
+        <div class="lg:col-span-5 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-salvia-200 text-salvia-900 text-xs font-semibold">
+            <span>Fácil Localização</span>
+          </div>
+
+          <h2 class="font-display text-3xl text-salvia-900 font-semibold leading-tight">
+            Venha nos visitar no Shopping Point 7
+          </h2>
+
+          <div class="space-y-3 text-sm text-charcoal/80">
+            <p class="flex items-start gap-3">
+              <span class="text-salvia-600 font-bold mt-0.5">📍</span>
+              <span>
+                <strong>Endereço:</strong><br>
+                Estrada Adhemar Bebiano, 4087<br>
+                Engenho da Rainha, Rio de Janeiro - RJ<br>
+                CEP 20765-171 (Dentro do Shopping Point 7)
+              </span>
+            </p>
+
+            <p class="flex items-start gap-3">
+              <span class="text-salvia-600 font-bold mt-0.5">🕒</span>
+              <span>
+                <strong>Funcionamento:</strong><br>
+                Segunda a Sábado, das 09h às 18h<br>
+                <em class="text-salvia-800">Atendimento exclusivamente com horário marcado.</em>
+              </span>
+            </p>
+
+            <p class="flex items-start gap-3">
+              <span class="text-salvia-600 font-bold mt-0.5">🚗</span>
+              <span>
+                <strong>Facilidades:</strong><br>
+                Acesso prático pelo transporte da região e conveniência do shopping.
+              </span>
+            </p>
+          </div>
+
+          <a href="https://maps.google.com/?q=Estrada+Adhemar+Bebiano,+4087+-+Engenho+da+Rainha,+Rio+de+Janeiro+-+RJ" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="inline-flex items-center gap-2 px-6 py-3 rounded-full text-xs font-bold uppercase tracking-wider text-salvia-900 bg-creme-50 border border-salvia-300 hover:bg-salvia-200 transition-colors">
+            <span>Abrir Rota no Google Maps</span>
+            <span>↗</span>
+          </a>
+        </div>
+
+        <!-- Embed do Mapa Interativo -->
+        <div class="lg:col-span-7">
+          <div class="rounded-3xl overflow-hidden border-2 border-salvia-200 shadow-md bg-creme-200 h-80 sm:h-96 relative">
+            <iframe 
+              title="Localização do Espaço Finare no Shopping Point 7"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.602518776856!2d-43.3039757239276!3d-22.85324547929424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997b66f443b09d%3A0xe543df51613ea766!2sEstr.%20Adhemar%20Bebiano%2C%204087%20-%20Engenho%20da%20Rainha%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2020765-171!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" 
+              class="w-full h-full border-0" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contato" class="py-16 md:py-24">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      
+      <div class="bg-creme-50 border-2 border-salvia-300 rounded-[32px] p-6 sm:p-10 shadow-lg relative overflow-hidden">
+        
+        <!-- Borda superior em gradiente característico -->
+        <div class="absolute top-0 left-0 right-0 h-2 ig-ring-gradient"></div>
+
+        <div class="text-center max-w-xl mx-auto mb-8">
+          <span class="text-xs font-semibold tracking-wider uppercase text-salvia-600 block mb-1">
+            Pré-Agendamento Rápido
+          </span>
+          <h2 class="font-display text-3xl text-salvia-900 font-semibold">
+            Reserve o Seu Momento
+          </h2>
+          <p class="text-sm text-charcoal/70 mt-2">
+            Preencha os campos abaixo para iniciar seu agendamento no WhatsApp de forma ágil e personalizada.
+          </p>
+          <div class="mt-3 inline-block bg-amber-50 border border-amber-200 text-amber-900 text-xs px-3 py-1.5 rounded-full font-medium">
+            ⚠️ Lembrando: Os atendimentos são realizados <strong>somente com horário marcado</strong>.
+          </div>
+        </div>
+
+        <!-- Formulário Interativo -->
+        <form id="appointmentForm" class="space-y-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            
+            <div>
+              <label for="clientName" class="block text-xs font-bold text-salvia-800 uppercase mb-1">Seu Nome *</label>
+              <input 
+                type="text" 
+                id="clientName" 
+                required 
+                placeholder="Ex: Mariana Silva" 
+                class="w-full px-4 py-3 rounded-2xl bg-creme-100 border border-salvia-300 text-sm text-grafite focus:outline-none focus:ring-2 focus:ring-salvia-500 transition"
+              >
+            </div>
+
+            <div>
+              <label for="clientPhone" class="block text-xs font-bold text-salvia-800 uppercase mb-1">Seu WhatsApp *</label>
+              <input 
+                type="tel" 
+                id="clientPhone" 
+                required 
+                placeholder="Ex: (21) 99999-9999" 
+                class="w-full px-4 py-3 rounded-2xl bg-creme-100 border border-salvia-300 text-sm text-grafite focus:outline-none focus:ring-2 focus:ring-salvia-500 transition"
+              >
+            </div>
+
+          </div>
+
+          <div>
+            <label for="serviceCategory" class="block text-xs font-bold text-salvia-800 uppercase mb-1">Serviço de Interesse *</label>
+            <select 
+              id="serviceCategory" 
+              required 
+              class="w-full px-4 py-3 rounded-2xl bg-creme-100 border border-salvia-300 text-sm text-grafite focus:outline-none focus:ring-2 focus:ring-salvia-500 transition"
+            >
+              <option value="Cabelos Especializados (Cacheados/Crespos)">Cabelos (Cacheados, Crespos, Corte & Cor)</option>
+              <option value="Terapia Capilar">Terapia Capilar & Saúde do Couro Cabeludo</option>
+              <option value="Unhas (Nails Designer)">Unhas (Nails Designer)</option>
+              <option value="Designer de Sobrancelhas">Sobrancelhas & Micropigmentação</option>
+              <option value="Estética Facial">Estética Facial</option>
+              <option value="Maquiagem e Penteado">Maquiagem e Penteado</option>
+              <option value="Drenagem Linfática Pós-Operatório">Drenagem Linfática Pós-Operatório</option>
+              <option value="Terapia Kids">Terapia Kids (Crianças)</option>
+              <option value="Dúvida Geral / Avaliação">Gostaria de uma Avaliação</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="clientNotes" class="block text-xs font-bold text-salvia-800 uppercase mb-1">Observações ou Preferência de Dia/Turno</label>
+            <textarea 
+              id="clientNotes" 
+              rows="3" 
+              placeholder="Ex: Gostaria de horário no sábado pela manhã..." 
+              class="w-full px-4 py-3 rounded-2xl bg-creme-100 border border-salvia-300 text-sm text-grafite focus:outline-none focus:ring-2 focus:ring-salvia-500 transition"
+            ></textarea>
+          </div>
+
+          <!-- Feedback de validação/envio -->
+          <div id="formFeedback" class="hidden p-3 rounded-xl text-xs font-semibold"></div>
+
+          <button 
+            type="submit" 
+            class="w-full py-4 rounded-full text-sm font-bold uppercase tracking-wider text-creme-50 bg-salvia-600 hover:bg-salvia-700 active:scale-[0.99] transition-all flex items-center justify-center gap-2 shadow-md">
+            <span>Enviar Solicitação para o WhatsApp</span>
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.35.491 1.199.534 1.286.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.861.174.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.144.39-.086s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z"/>
+            </svg>
+          </button>
+        </form>
+
+        <!-- Contato Direto Alternativo -->
+        <div class="mt-8 pt-6 border-t border-salvia-200 text-center flex flex-wrap items-center justify-center gap-6 text-xs text-charcoal/80">
+          <a href="tel:5521980773374" class="hover:text-salvia-700 transition">📞 (21) 98077-3374</a>
+          <a href="https://www.instagram.com/espacofinare" target="_blank" rel="noopener noreferrer" class="hover:text-salvia-700 transition">📸 @espacofinare</a>
+          <a href="https://facebook.com/espacofinare" target="_blank" rel="noopener noreferrer" class="hover:text-salvia-700 transition">📘 facebook.com/espacofinare</a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="bg-salvia-900 text-creme-100 py-12 border-t border-salvia-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-salvia-800 text-center md:text-left">
+        
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 p-[2px] rounded-full ig-ring-gradient">
+            <div class="w-full h-full rounded-full bg-salvia-800 flex items-center justify-center font-display font-bold text-creme-100 text-sm">
+              F
+            </div>
+          </div>
+          <div>
+            <h3 class="font-display font-semibold text-lg text-creme-100">Espaço Finare</h3>
+            <p class="text-xs text-salvia-300">Salão de Beleza | Terapia Capilar</p>
+          </div>
+        </div>
+
+        <div class="text-xs text-creme-200/70 max-w-sm">
+          Shopping Point 7 • Estrada Adhemar Bebiano, 4087 - Engenho da Rainha, RJ.<br>
+          Sob coordenação de <strong>Renata Vatimo</strong>.
+        </div>
+
+        <div class="flex items-center gap-4 text-sm font-semibold text-salvia-200">
+          <a href="https://www.instagram.com/espacofinare" target="_blank" rel="noopener noreferrer" class="hover:text-amber-300 transition">Instagram</a>
+          <a href="https://facebook.com/espacofinare" target="_blank" rel="noopener noreferrer" class="hover:text-amber-300 transition">Facebook</a>
+          <a href="https://wa.me/5521980773374" target="_blank" rel="noopener noreferrer" class="hover:text-amber-300 transition">WhatsApp</a>
+        </div>
+
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-creme-200/50">
+        <p>© 2026 Espaço Finare. Todos os direitos reservados.</p>
+        <p>Atendimento exclusivo mediante agendamento prévio.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <aside aria-label="Ações Rápidas">
+    <a 
+      href="https://wa.me/5521980773374?text=Ol%C3%A1%2C%20gostaria%20de%20marcar%20um%20hor%C3%A1rio%20no%20Espa%C3%A7o%20Finare!" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      class="fixed bottom-6 right-6 z-50 p-[3px] rounded-full ig-ring-gradient shadow-2xl hover:scale-110 active:scale-95 transition-transform duration-300 flex items-center justify-center group"
+      aria-label="Agendar via WhatsApp"
+    >
+      <div class="w-14 h-14 rounded-full bg-salvia-600 flex items-center justify-center text-creme-50 border-2 border-creme-100 shadow-inner">
+        <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24">
+          <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.35.491 1.199.534 1.286.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.861.174.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.144.39-.086s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z"/>
+        </svg>
+      </div>
+      <!-- Tooltip elegante no hover desktop -->
+      <span class="hidden md:group-hover:inline-block absolute right-16 bg-salvia-900 text-creme-100 text-xs px-3 py-1.5 rounded-xl whitespace-nowrap shadow-lg">
+        Agendar Horário
+      </span>
+    </a>
+  </aside>
+
+  <script>
+    // 1. Dados Estruturados das Categorias (Baseados nos destaques do Instagram da marca)
+    const categorias = [
+      {
+        id: 'cabelos',
+        nome: 'Cabelos',
+        icone: '✂️',
+        titulo: 'Cabelos & Curvaturas Especializadas',
+        destaqueTag: 'Especialidade Principal',
+        descricao: 'Cuidado sob medida para curvaturas 2A a 4C, além de todos os tipos de fios. Técnicas pensadas para respeitar o fator encolhimento, caimento natural e integridade da fibra capilar.',
+        itens: [
+          'Corte a seco e personalizado para cachos e crespos',
+          'Tratamentos de nutrição e umectação profunda',
+          'Coloração e mechas preservando a saúde dos cachos',
+          'Finalização e definição de alta durabilidade'
+        ]
+      },
+      {
+        id: 'terapia',
+        nome: 'Terapia Capilar',
+        icone: '🌿',
+        titulo: 'Terapia Capilar Personalizada',
+        destaqueTag: 'Saúde do Couro Cabeludo',
+        descricao: 'Tratamento clínico e preventivo de disfunções capilares com Renata Vatimo. Foco na regeneração capilar, queda, descamação, oleosidade excessiva e fortalecimento desde o bulbo.',
+        itens: [
+          'Análise detalhada do couro cabeludo',
+          'Argiloterapia e desintoxicação capilar',
+          'Tratamentos fortalecedores antiqueda',
+          'Estímulo ao crescimento saudável de novos fios'
+        ]
+      },
+      {
+        id: 'unhas',
+        nome: 'Unhas',
+        icone: '💅',
+        titulo: 'Unhas & Nails Designer',
+        destaqueTag: 'Elegância & Durabilidade',
+        descricao: 'Beleza e acabamento impecável para as suas mãos e pés com técnicas atuais de alongamento, cutilagem russa e esmaltação de alta durabilidade.',
+        itens: [
+          'Alongamento e manutenção em gel/fibra',
+          'Blindagem e banho de gel',
+          'Esmaltação em gel de secagem rápida',
+          'Spa dos pés e mãos completo'
+        ]
+      },
+      {
+        id: 'sobrancelhas',
+        nome: 'Sobrancelhas',
+        icone: '✨',
+        titulo: 'Designer de Sobrancelha & Micropigmentação',
+        destaqueTag: 'Harmonia do Olhar',
+        descricao: 'Visagismo facial para realçar a curvatura e expressão natural do seu rosto, corrigindo falhas com sutileza e técnica apurada.',
+        itens: [
+          'Design personalizado com alinhamento simétrico',
+          'Aplicação de Henna com efeito degradê suave',
+          'Micropigmentação fio a fio e sombreada',
+          'Epilação facial egípcia (linha)'
+        ]
+      },
+      {
+        id: 'facial',
+        nome: 'Estética Facial',
+        icone: '🌸',
+        titulo: 'Estética Facial & Cuidados com a Pele',
+        destaqueTag: 'Revitalização',
+        descricao: 'Procedimentos suaves e eficientes para restaurar o viço, equilíbrio hídrico e a luminosidade da sua pele.',
+        itens: [
+          'Limpeza de pele profunda com extração delicada',
+          'Hidratação e revitalização facial intensiva',
+          'Peelings suaves e renovadores',
+          'Massagem facial relaxante'
+        ]
+      },
+      {
+        id: 'make',
+        nome: 'Make & Penteado',
+        icone: '💄',
+        titulo: 'Maquiagem & Penteados para Ocasiões',
+        destaqueTag: 'Eventos & Produção',
+        descricao: 'Produções completas para formaturas, casamentos, ensaios e momentos inesquecíveis, valorizando traços e cachos com elegância.',
+        itens: [
+          'Maquiagem social e de alta resistência',
+          'Penteados estruturados para cacheadas e crespas',
+          'Produção prévia para noivas e debutantes',
+          'Preparação e fixação antiumidade'
+        ]
+      },
+      {
+        id: 'posop',
+        nome: 'Pós-Operatório',
+        icone: '💧',
+        titulo: 'Drenagem Linfática Pós-Operatório',
+        destaqueTag: 'Recuperação Segura',
+        descricao: 'Protocolos manuais especializados para alívio de edemas, melhora da circulação e prevenção de fibroses em pós-cirúrgicos estéticos ou reparadores.',
+        itens: [
+          'Drenagem linfática manual com técnica médica',
+          'Redução de inchaço e hematomas',
+          'Acompanhamento seguro da cicatrização',
+          'Ambiente calmo e higienizado'
+        ]
+      },
+      {
+        id: 'kids',
+        nome: 'Terapia Kids',
+        icone: '🧸',
+        titulo: 'Terapia Kids: Cuidado Afetivo',
+        destaqueTag: 'Especial para Crianças',
+        descricao: 'Atendimento lúdico e muito paciente para os pequenos aprenderem a amar seus cachinhos desde a infância, sem traumas de dor ou puxões.',
+        itens: [
+          'Corte infantil com paciência e acolhimento',
+          'Desembaraço sem dor e hidratação suave',
+          'Orientação prática para as mães e responsáveis',
+          'Produtos seguros e hipoalergênicos'
+        ]
+      }
+    ];
+
+    let categoriaAtiva = categorias[0].id;
+
+    const highlightsTrack = document.getElementById('highlightsTrack');
+    const serviceDetailsCard = document.getElementById('serviceDetailsCard');
+
+    function renderizarDestaques() {
+      highlightsTrack.innerHTML = '';
+      categorias.forEach(cat => {
+        const isActive = cat.id === categoriaAtiva;
+        const btn = document.createElement('button');
+        btn.setAttribute('type', 'button');
+        btn.setAttribute('data-id', cat.id);
+        btn.setAttribute('aria-label', `Ver detalhes de ${cat.nome}`);
+        btn.className = `flex flex-col items-center gap-1.5 focus:outline-none transition-transform duration-200 group flex-shrink-0 ${isActive ? 'scale-105' : 'opacity-85 hover:opacity-100'}`;
+
+        // Círculo com anel
+        const ringBorder = isActive ? 'ig-ring-gradient shadow-md' : 'bg-salvia-300 group-hover:bg-salvia-400';
+        
+        btn.innerHTML = `
+          <div class="w-16 h-16 sm:w-20 sm:h-20 p-[2.5px] rounded-full ${ringBorder} transition-all duration-300">
+            <div class="w-full h-full rounded-full bg-creme-100 flex items-center justify-center text-xl sm:text-2xl border-2 border-creme-50">
+              <span>${cat.icone}</span>
+            </div>
+          </div>
+          <span class="text-[11px] sm:text-xs font-semibold ${isActive ? 'text-salvia-900 font-bold' : 'text-charcoal/80'} whitespace-nowrap">
+            ${cat.nome}
+          </span>
+        `;
+
+        btn.addEventListener('click', () => {
+          selecionarCategoria(cat.id);
+        });
+
+        highlightsTrack.appendChild(btn);
+      });
+    }
+
+    function renderizarDetalhes(cat) {
+      serviceDetailsCard.classList.remove('tab-fade-enter');
+      // Forçar reflow para reiniciar animação CSS suave
+      void serviceDetailsCard.offsetWidth;
+      serviceDetailsCard.classList.add('tab-fade-enter');
+
+      serviceDetailsCard.innerHTML = `
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-salvia-200 pb-4 mb-4">
+          <div class="flex items-center gap-3">
+            <span class="text-3xl">${cat.icone}</span>
+            <div>
+              <h3 class="font-display text-xl sm:text-2xl text-salvia-900 font-semibold">${cat.titulo}</h3>
+              <span class="inline-block text-[10px] uppercase font-bold tracking-wider text-salvia-600 bg-salvia-100 px-2.5 py-0.5 rounded-full mt-1">
+                ${cat.destaqueTag}
+              </span>
+            </div>
+          </div>
+          <a 
+            href="https://wa.me/5521980773374?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20e%20agendar%20um%20hor%C3%A1rio%20para%20o%20servi%C3%A7o%20de%20*${encodeURIComponent(cat.titulo)}*." 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="self-start sm:self-auto inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider text-creme-50 bg-salvia-600 hover:bg-salvia-700 transition shadow-sm"
+          >
+            <span>Agendar Este Serviço</span>
+            <span>→</span>
+          </a>
+        </div>
+
+        <p class="text-charcoal/80 text-sm sm:text-base leading-relaxed mb-6">
+          ${cat.descricao}
+        </p>
+
+        <div class="bg-creme-100 rounded-2xl p-4 border border-salvia-200">
+          <p class="text-xs font-bold text-salvia-800 uppercase tracking-wider mb-2">Procedimentos & Tratamentos Inclusos:</p>
+          <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs sm:text-sm text-charcoal/85">
+            ${cat.itens.map(item => `
+              <li class="flex items-start gap-2">
+                <span class="text-salvia-500 font-bold">✓</span>
+                <span>${item}</span>
+              </li>
+            `).join('')}
+          </ul>
+        </div>
+      `;
+    }
+
+    function selecionarCategoria(id) {
+      categoriaAtiva = id;
+      renderizarDestaques();
+      const cat = categorias.find(c => c.id === id);
+      if (cat) {
+        renderizarDetalhes(cat);
+      }
+    }
+
+    // Inicialização ao carregar o DOM
+    document.addEventListener('DOMContentLoaded', () => {
+      renderizarDestaques();
+      renderizarDetalhes(categorias[0]);
+
+      // Menu Hamburguer Mobile
+      const mobileBtn = document.getElementById('mobileMenuBtn');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const mobileLinks = document.querySelectorAll('.mobile-link');
+
+      if (mobileBtn && mobileMenu) {
+        mobileBtn.addEventListener('click', () => {
+          const isOpen = mobileMenu.classList.contains('flex');
+          if (isOpen) {
+            mobileMenu.classList.remove('flex');
+            mobileMenu.classList.add('hidden');
+          } else {
+            mobileMenu.classList.remove('hidden');
+            mobileMenu.classList.add('flex');
+          }
+        });
+
+        mobileLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            mobileMenu.classList.remove('flex');
+            mobileMenu.classList.add('hidden');
+          });
+        });
+      }
+
+      // Envio do Formulário Estruturado para o WhatsApp
+      const appointmentForm = document.getElementById('appointmentForm');
+      const feedback = document.getElementById('formFeedback');
+
+      if (appointmentForm) {
+        appointmentForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+
+          const nome = document.getElementById('clientName').value.trim();
+          const telefone = document.getElementById('clientPhone').value.trim();
+          const servico = document.getElementById('serviceCategory').value;
+          const notas = document.getElementById('clientNotes').value.trim();
+
+          if (!nome || !telefone) {
+            feedback.className = 'p-3 rounded-xl text-xs font-semibold bg-red-100 text-red-700 block';
+            feedback.textContent = 'Por favor, preencha o seu nome e telefone WhatsApp.';
+            return;
+          }
+
+          // Monta a mensagem para a Renata Vatimo
+          let msg = `Olá, Renata! Gostaria de solicitar um agendamento no *Espaço Finare*:\n\n`;
+          msg += `👤 *Nome:* ${nome}\n`;
+          msg += `📱 *WhatsApp:* ${telefone}\n`;
+          msg += `✂️ *Serviço de Interesse:* ${servico}\n`;
+          if (notas) {
+            msg += `📝 *Observação:* ${notas}\n`;
+          }
+          msg += `\n(Entendo que os atendimentos são realizados exclusivamente com horário marcado.)`;
+
+          const waUrl = `https://wa.me/5521980773374?text=${encodeURIComponent(msg)}`;
+
+          feedback.className = 'p-3 rounded-xl text-xs font-semibold bg-salvia-100 text-salvia-800 block';
+          feedback.textContent = 'Redirecionando com os dados para o WhatsApp da equipe...';
+
+          setTimeout(() => {
+            window.open(waUrl, '_blank');
+          }, 400);
+        });
+      }
+    });
+  </script>
+
+</body>
+</html>
